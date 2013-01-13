@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C732D5616A29E61002010E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C732D5516A29E61002010E1 /* UIKit.framework */; };
+		2C732D5716A29E61002010E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C932B8616A28C8F00EA025C /* Foundation.framework */; };
+		2C732D5F16A29E61002010E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C732D5D16A29E61002010E1 /* InfoPlist.strings */; };
+		2C732D6116A29E61002010E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C732D6016A29E61002010E1 /* main.m */; };
+		2C732D6516A29E61002010E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C732D6416A29E61002010E1 /* AppDelegate.m */; };
+		2C732D6F16A29FE2002010E1 /* libSTTimer-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C932B8316A28C8F00EA025C /* libSTTimer-iOS.a */; };
+		2C732D7016A2A0B4002010E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C932B8616A28C8F00EA025C /* Foundation.framework */; };
+		2C932B8716A28C8F00EA025C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C932B8616A28C8F00EA025C /* Foundation.framework */; };
+		2C932B8C16A28C8F00EA025C /* STTimer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C932B8B16A28C8F00EA025C /* STTimer.h */; };
+		2C932B8E16A28C8F00EA025C /* STTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C932B8D16A28C8F00EA025C /* STTimer.m */; };
+		2C932BA816A2912400EA025C /* STTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C932B8D16A28C8F00EA025C /* STTimer.m */; };
+		2C932BAE16A2930900EA025C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C932B8616A28C8F00EA025C /* Foundation.framework */; };
+		2C932BB116A2930900EA025C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C932BB016A2930900EA025C /* main.m */; };
+		2C932BB916A2939C00EA025C /* libSTTimer-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C932B9816A290E500EA025C /* libSTTimer-mac.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C932B8116A28C8F00EA025C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				2C932B8C16A28C8F00EA025C /* STTimer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C932BAB16A2930900EA025C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C732D5416A29E61002010E1 /* STTimerDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STTimerDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C732D5516A29E61002010E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C732D5C16A29E61002010E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C732D5E16A29E61002010E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C732D6016A29E61002010E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C732D6316A29E61002010E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C732D6416A29E61002010E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C932B8316A28C8F00EA025C /* libSTTimer-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSTTimer-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C932B8616A28C8F00EA025C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C932B8B16A28C8F00EA025C /* STTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTimer.h; sourceTree = "<group>"; };
+		2C932B8D16A28C8F00EA025C /* STTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTimer.m; sourceTree = "<group>"; };
+		2C932B9816A290E500EA025C /* libSTTimer-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSTTimer-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C932BAD16A2930900EA025C /* STTimerDemo-mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "STTimerDemo-mac"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C932BB016A2930900EA025C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C932BBA16A296B400EA025C /* STTimer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = STTimer.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C732D5116A29E61002010E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C732D5616A29E61002010E1 /* UIKit.framework in Frameworks */,
+				2C732D5716A29E61002010E1 /* Foundation.framework in Frameworks */,
+				2C732D6F16A29FE2002010E1 /* libSTTimer-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C932B8016A28C8F00EA025C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C932B8716A28C8F00EA025C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C932B9516A290E500EA025C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C732D7016A2A0B4002010E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C932BAA16A2930900EA025C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C932BAE16A2930900EA025C /* Foundation.framework in Frameworks */,
+				2C932BB916A2939C00EA025C /* libSTTimer-mac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C732D5A16A29E61002010E1 /* STTimerDemo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C732D5C16A29E61002010E1 /* Info.plist */,
+				2C732D5D16A29E61002010E1 /* InfoPlist.strings */,
+				2C732D6016A29E61002010E1 /* main.m */,
+				2C732D6316A29E61002010E1 /* AppDelegate.h */,
+				2C732D6416A29E61002010E1 /* AppDelegate.m */,
+			);
+			path = "STTimerDemo-iOS";
+			sourceTree = "<group>";
+		};
+		2C932B7A16A28C8F00EA025C = {
+			isa = PBXGroup;
+			children = (
+				2C932B8816A28C8F00EA025C /* STTimer */,
+				2C932BAF16A2930900EA025C /* STTimerDemo-mac */,
+				2C732D5A16A29E61002010E1 /* STTimerDemo-iOS */,
+				2C932B8516A28C8F00EA025C /* Frameworks */,
+				2C932B8416A28C8F00EA025C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C932B8416A28C8F00EA025C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C932B8316A28C8F00EA025C /* libSTTimer-iOS.a */,
+				2C932B9816A290E500EA025C /* libSTTimer-mac.a */,
+				2C932BAD16A2930900EA025C /* STTimerDemo-mac */,
+				2C732D5416A29E61002010E1 /* STTimerDemo-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C932B8516A28C8F00EA025C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C932B8616A28C8F00EA025C /* Foundation.framework */,
+				2C732D5516A29E61002010E1 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C932B8816A28C8F00EA025C /* STTimer */ = {
+			isa = PBXGroup;
+			children = (
+				2C932B8B16A28C8F00EA025C /* STTimer.h */,
+				2C932B8D16A28C8F00EA025C /* STTimer.m */,
+				2C932BBA16A296B400EA025C /* STTimer.xcconfig */,
+			);
+			path = STTimer;
+			sourceTree = "<group>";
+		};
+		2C932BAF16A2930900EA025C /* STTimerDemo-mac */ = {
+			isa = PBXGroup;
+			children = (
+				2C932BB016A2930900EA025C /* main.m */,
+			);
+			path = "STTimerDemo-mac";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2C932B9616A290E500EA025C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C732D5316A29E61002010E1 /* STTimerDemo-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C732D6E16A29E61002010E1 /* Build configuration list for PBXNativeTarget "STTimerDemo-iOS" */;
+			buildPhases = (
+				2C732D5016A29E61002010E1 /* Sources */,
+				2C732D5116A29E61002010E1 /* Frameworks */,
+				2C732D5216A29E61002010E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STTimerDemo-iOS";
+			productName = "STTimerDemo-iOS";
+			productReference = 2C732D5416A29E61002010E1 /* STTimerDemo-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C932B8216A28C8F00EA025C /* STTimer-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C932B9116A28C8F00EA025C /* Build configuration list for PBXNativeTarget "STTimer-iOS" */;
+			buildPhases = (
+				2C932B7F16A28C8F00EA025C /* Sources */,
+				2C932B8016A28C8F00EA025C /* Frameworks */,
+				2C932B8116A28C8F00EA025C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STTimer-iOS";
+			productName = STTimer;
+			productReference = 2C932B8316A28C8F00EA025C /* libSTTimer-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2C932B9716A290E500EA025C /* STTimer-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C932BA516A290E500EA025C /* Build configuration list for PBXNativeTarget "STTimer-mac" */;
+			buildPhases = (
+				2C932B9416A290E500EA025C /* Sources */,
+				2C932B9516A290E500EA025C /* Frameworks */,
+				2C932B9616A290E500EA025C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STTimer-mac";
+			productName = "STTimer-mac";
+			productReference = 2C932B9816A290E500EA025C /* libSTTimer-mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2C932BAC16A2930900EA025C /* STTimerDemo-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C932BB616A2930900EA025C /* Build configuration list for PBXNativeTarget "STTimerDemo-mac" */;
+			buildPhases = (
+				2C932BA916A2930900EA025C /* Sources */,
+				2C932BAA16A2930900EA025C /* Frameworks */,
+				2C932BAB16A2930900EA025C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "STTimerDemo-mac";
+			productName = "STTimerDemo-mac";
+			productReference = 2C932BAD16A2930900EA025C /* STTimerDemo-mac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C932B7B16A28C8F00EA025C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Scott Talbot";
+			};
+			buildConfigurationList = 2C932B7E16A28C8F00EA025C /* Build configuration list for PBXProject "STTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C932B7A16A28C8F00EA025C;
+			productRefGroup = 2C932B8416A28C8F00EA025C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C932B8216A28C8F00EA025C /* STTimer-iOS */,
+				2C932B9716A290E500EA025C /* STTimer-mac */,
+				2C932BAC16A2930900EA025C /* STTimerDemo-mac */,
+				2C732D5316A29E61002010E1 /* STTimerDemo-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C732D5216A29E61002010E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C732D5F16A29E61002010E1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C732D5016A29E61002010E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C732D6116A29E61002010E1 /* main.m in Sources */,
+				2C732D6516A29E61002010E1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C932B7F16A28C8F00EA025C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C932B8E16A28C8F00EA025C /* STTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C932B9416A290E500EA025C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C932BA816A2912400EA025C /* STTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C932BA916A2930900EA025C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C932BB116A2930900EA025C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C732D5D16A29E61002010E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C732D5E16A29E61002010E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C732D6C16A29E61002010E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "STTimerDemo-iOS/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C732D6D16A29E61002010E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "STTimerDemo-iOS/Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2C932B8F16A28C8F00EA025C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C932BBA16A296B400EA025C /* STTimer.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C932B9016A28C8F00EA025C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C932BBA16A296B400EA025C /* STTimer.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C932B9216A28C8F00EA025C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/STTimer.dst;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2C932B9316A28C8F00EA025C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/STTimer.dst;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2C932BA616A290E500EA025C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode46-DP4.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C932BA716A290E500EA025C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode46-DP4.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2C932BB716A2930900EA025C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2C932BB816A2930900EA025C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C732D6E16A29E61002010E1 /* Build configuration list for PBXNativeTarget "STTimerDemo-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C732D6C16A29E61002010E1 /* Debug */,
+				2C732D6D16A29E61002010E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C932B7E16A28C8F00EA025C /* Build configuration list for PBXProject "STTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C932B8F16A28C8F00EA025C /* Debug */,
+				2C932B9016A28C8F00EA025C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C932B9116A28C8F00EA025C /* Build configuration list for PBXNativeTarget "STTimer-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C932B9216A28C8F00EA025C /* Debug */,
+				2C932B9316A28C8F00EA025C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C932BA516A290E500EA025C /* Build configuration list for PBXNativeTarget "STTimer-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C932BA616A290E500EA025C /* Debug */,
+				2C932BA716A290E500EA025C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C932BB616A2930900EA025C /* Build configuration list for PBXNativeTarget "STTimerDemo-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C932BB716A2930900EA025C /* Debug */,
+				2C932BB816A2930900EA025C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C932B7B16A28C8F00EA025C /* Project object */;
+}
