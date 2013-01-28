@@ -79,6 +79,9 @@ static inline NSComparisonResult STCompareDouble(double a, double b, double e) {
             __weak __typeof__(self) wself = self;
             dispatch_source_set_event_handler(_source, ^{
                 __strong __typeof__(self) sself = wself;
+				if (!sself) {
+					return;
+				}
 				if (!repeats) {
 					dispatch_source_cancel(sself->_source);
 				}
